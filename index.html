@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Corrispondenza | Basic Stats</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="style/style.css"> 
+	<link rel="stylesheet" href="js/jquery/themes/base/jquery.ui.all.css"> 
+
+
+	<!-- Underscore -->
+	<script type="text/javascript" src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery/jquery-1.5.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.DOMwindow.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-ui-1.8.12.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery/mColorPicker.min.js"></script>
+	
+	<!-- Visualization - d3 and Polymaps -->
+	<script type="text/javascript" src="js/d3/d3.min.js"></script>
+	<script type="text/javascript" src="js/d3/d3.geom.min.js"></script>
+	<script type="text/javascript" src="js/d3/d3.layout.min.js"></script>
+	<script type="text/javascript" src="js/polymaps/polymaps.js"></script>
+
+	<!-- Basic Stats -->
+	<script type="text/javascript" src="js/bst/bst.js"></script>
+	<script type="text/javascript" src="js/bst/bst.query.js"></script>
+	<script type="text/javascript" src="js/bst/bst.data.js"></script>
+	<script type="text/javascript" src="js/bst/bst.stats.js"></script>
+	<script type="text/javascript" src="js/bst/bst.view.js"></script>
+
+</head>
+
+<body>
+	<div id="page">
+
+
+		<div id="timefix">
+			<label for="fromtime">From</label>
+			<input type="text" value="1600" id="fromtime"/>
+			<label for="totime">To</label>
+			<input type="text" value="1650" id="totime"/>
+
+		</div>
+		
+		<!-- The filters -->	
+		<div id="chart"></div>
+		
+		<!-- A bunch of properties for this project -->		
+		<select id="selection">
+			<option value="Archive" label="Archive">
+			<option value="Author" label="Author">
+			<option value="Recipient" label="Recipient">
+			<option value="Date" label="Date">
+			<option value="Source" label="Source">
+			<option value="Destination" label="Destination">
+		</select>
+		
+		<input type="button" id="add" value="Add">
+		
+		<!-- The Map -->
+		<div id="maplink">Drag here for the map</div>
+		
+	</div>
+	
+		<!-- The JS code -->	
+		<script type="text/javascript" src="js/bst/bst.test.js"></script>
+
+</body>
+</html>
